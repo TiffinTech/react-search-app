@@ -1,10 +1,8 @@
 ---
 id: uh6h7
-name: "React Search App "
-file_version: 1.1.0
-app_version: 1.0.6
-file_blobs:
-  src/App.js: 3aa656d03074200445af590f7a320891d7bb48ca
+title: "React Search App "
+file_version: 1.1.1
+app_version: 1.0.9
 ---
 
 ## Introduction
@@ -19,14 +17,35 @@ You find retrieve your unique API key from API Ninja. It will be located in the 
 <!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
 ### 📄 src/App.js
 ```javascript
-🟩 15             const res = await fetch(
-🟩 16               `https://api.api-ninjas.com/v1/celebrity?name=${searchTerm}`,
-🟩 17               {
-🟩 18                 headers: {
-🟩 19                   'X-Api-Key': 'YOUR API KEY'
-🟩 20                 }
-🟩 21               }
-🟩 22             );
+15             const res = await fetch(
+16               `https://api.api-ninjas.com/v1/celebrity?name=${searchTerm}`,
+17               {
+18                 headers: {
+19                   'X-Api-Key': 'YOUR API KEY'
+20                 }
+21               }
+22             );
+```
+
+<br/>
+
+<br/>
+
+<br/>
+
+
+<!-- NOTE-swimm-snippet: the lines below link your snippet to Swimm -->
+### 📄 src/App.js
+```javascript
+49           ) : (
+50             searchResults.map(result => (
+51               <div key={result.id}>
+52                 <h2>{result.name}</h2>
+53                 <p>{result.max_height}</p>
+54                 <p>Nepo Baby Net worth from 2023: {result.net_worth}</p>
+55               </div>
+56             ))
+57           )}
 ```
 
 <br/>
