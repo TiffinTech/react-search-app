@@ -50,6 +50,7 @@ function App() {
         searchResults.map(result => (
           <div key={result.id}>
             <h2>{result.name}</h2>
+            <p>{result.name}</p>
             <p>Nepo Baby Net worth from 2023: {result.net_worth}</p>
           </div>
         ))
