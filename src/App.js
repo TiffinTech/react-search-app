@@ -34,6 +34,7 @@ function App() {
 
   return (
     <div>
+    <h1>Title Goes Here</h1>
       <form>
         <label htmlFor="search">Search for a Nepo Baby:</label>
         <input
